@@ -80,6 +80,7 @@ export class CustomerControllerBase {
         mobile: true,
         Password: true,
         updatedAt: true,
+        username: true,
       },
     });
   }
@@ -119,6 +120,7 @@ export class CustomerControllerBase {
         mobile: true,
         Password: true,
         updatedAt: true,
+        username: true,
       },
     });
     return results.map((result) => permission.filter(result));
@@ -157,6 +159,7 @@ export class CustomerControllerBase {
         mobile: true,
         Password: true,
         updatedAt: true,
+        username: true,
       },
     });
     if (result === null) {
@@ -216,6 +219,7 @@ export class CustomerControllerBase {
           mobile: true,
           Password: true,
           updatedAt: true,
+          username: true,
         },
       });
     } catch (error) {
@@ -255,6 +259,7 @@ export class CustomerControllerBase {
           mobile: true,
           Password: true,
           updatedAt: true,
+          username: true,
         },
       });
     } catch (error) {

@@ -8,4 +8,5 @@ export type Customer = {
   mobile: number;
   Password: string;
   updatedAt: Date;
+  username: string;
 };
