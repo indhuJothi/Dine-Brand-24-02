@@ -18,6 +18,7 @@ export const CustomerList = (props: ListProps): React.ReactElement => {
         <TextField label="Mobile" source="mobile" />
         <TextField label="Password" source="Password" />
         <DateField source="updatedAt" label="Updated At" />
+        <TextField label="Username" source="username" />
       </Datagrid>
     </List>
   );

@@ -24,6 +24,7 @@ export const CustomerCreate = (props: CreateProps): React.ReactElement => {
         />
         <NumberInput step={1} label="Mobile" source="mobile" />
         <TextInput label="Password" source="Password" />
+        <TextInput label="Username" source="username" />
       </SimpleForm>
     </Create>
   );

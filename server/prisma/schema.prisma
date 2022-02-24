@@ -26,6 +26,7 @@ model Customer {
   mobile     Int
   Password   String
   updatedAt  DateTime               @updatedAt
+  username   String
 }
 
 model Location {

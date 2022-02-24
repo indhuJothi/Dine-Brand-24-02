@@ -6,4 +6,5 @@ export type CustomerWhereInput = {
   id?: StringFilter;
   mobile?: IntFilter;
   Password?: StringFilter;
+  username?: StringFilter;
 };

@@ -61,5 +61,16 @@ class CustomerWhereInput {
     nullable: true,
   })
   Password?: StringFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringFilter,
+  })
+  @Type(() => StringFilter)
+  @IsOptional()
+  @Field(() => StringFilter, {
+    nullable: true,
+  })
+  username?: StringFilter;
 }
 export { CustomerWhereInput };

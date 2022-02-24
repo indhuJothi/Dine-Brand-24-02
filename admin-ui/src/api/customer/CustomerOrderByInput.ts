@@ -7,4 +7,5 @@ export type CustomerOrderByInput = {
   mobile?: SortOrder;
   Password?: SortOrder;
   updatedAt?: SortOrder;
+  username?: SortOrder;
 };

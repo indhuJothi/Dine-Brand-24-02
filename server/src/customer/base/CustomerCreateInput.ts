@@ -38,5 +38,13 @@ class CustomerCreateInput {
   @IsString()
   @Field(() => String)
   Password!: string;
+
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @Field(() => String)
+  username!: string;
 }
 export { CustomerCreateInput };
