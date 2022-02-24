@@ -27,6 +27,7 @@ import { LocationFindUniqueArgs } from "./LocationFindUniqueArgs";
 import { Location } from "./Location";
 import { Customer } from "../../customer/base/Customer";
 import { LocationService } from "../location.service";
+import { any } from "jest-mock-extended";
 
 @graphql.Resolver(() => Location)
 @common.UseGuards(GqlDefaultAuthGuard, gqlACGuard.GqlACGuard)
@@ -189,7 +190,7 @@ export class LocationResolverBase {
             : undefined,
         },
       });
-    } catch (error) {
+    } catch (error:any) {
       if (isRecordNotFoundError(error)) {
         throw new apollo.ApolloError(
           `No resource was found for ${JSON.stringify(args.where)}`
@@ -211,7 +212,7 @@ export class LocationResolverBase {
     try {
       // @ts-ignore
       return await this.service.delete(args);
-    } catch (error) {
+    } catch (error:any) {
       if (isRecordNotFoundError(error)) {
         throw new apollo.ApolloError(
           `No resource was found for ${JSON.stringify(args.where)}`

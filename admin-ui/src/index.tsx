@@ -4,10 +4,12 @@ import "./index.css";
 // @ts-ignore
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Homepage from './homepage'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Homepage/>
   </React.StrictMode>,
   document.getElementById("root")
 );
